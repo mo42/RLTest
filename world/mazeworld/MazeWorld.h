@@ -3,9 +3,9 @@
 
 #include <cstddef>
 
-#include "IGridWorld.h"
-#include "MazeAction.h"
-#include "MazeState.h"
+#include <IGridWorld.h>
+#include <MazeAction.h>
+#include <MazeState.h>
 
 namespace RL {
 

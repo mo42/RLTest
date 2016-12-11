@@ -1,11 +1,11 @@
 #ifndef SARSA_H_
 #define SARSA_H_
 
-#include "EpsilonPolicy.h"
-#include "IGridWorld.h"
-#include "RLRandom.h"
-#include "RandomPolicy.h"
-#include "StateAction.h"
+#include <EpsilonPolicy.h>
+#include <IGridWorld.h>
+#include <RLRandom.h>
+#include <RandomPolicy.h>
+#include <StateAction.h>
 
 namespace RL {
 

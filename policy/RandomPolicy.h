@@ -1,7 +1,7 @@
 #ifndef RANDOMPOLICY_H_
 #define RANDOMPOLICY_H_
 
-#include "IGridWorld.h"
+#include <IGridWorld.h>
 
 namespace RL {
 

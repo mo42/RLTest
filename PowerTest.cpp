@@ -1,10 +1,10 @@
 #include <iostream>
 
-#include "CartPoleAction.h"
-#include "CartPoleParameter.h"
-#include "CartPoleWeight.h"
-#include "CartPoleWorld.h"
-#include "Power.h"
+#include <CartPoleAction.h>
+#include <CartPoleParameter.h>
+#include <CartPoleWeight.h>
+#include <CartPoleWorld.h>
+#include <Power.h>
 
 using namespace RL;
 

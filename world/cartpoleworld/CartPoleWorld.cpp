@@ -1,7 +1,7 @@
 #include <cmath>
 
-#include "CartPoleWorld.h"
-#include "RLRandom.h"
+#include <CartPoleWorld.h>
+#include <RLRandom.h>
 
 namespace RL {
 

@@ -3,7 +3,7 @@
 
 #include <vector>
 
-#include "ContinuousNoisePolicy.h"
+#include <ContinuousNoisePolicy.h>
 
 namespace RL {
 

@@ -1,7 +1,7 @@
 #ifndef CONTINUOUSNOISEPOLICY_H_
 #define CONTINUOUSNOISEPOLICY_H_
 
-#include "RLRandom.h"
+#include <RLRandom.h>
 
 namespace RL {
 

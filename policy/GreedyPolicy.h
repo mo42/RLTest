@@ -3,9 +3,9 @@
 
 #include <limits>
 
-#include "IGridWorld.h"
-#include "RLRandom.h"
-#include "StateAction.h"
+#include <IGridWorld.h>
+#include <RLRandom.h>
+#include <StateAction.h>
 
 namespace RL {
 

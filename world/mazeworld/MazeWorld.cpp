@@ -1,5 +1,5 @@
-#include "MazeWorld.h"
-#include "RLRandom.h"
+#include <MazeWorld.h>
+#include <RLRandom.h>
 
 namespace RL {
 

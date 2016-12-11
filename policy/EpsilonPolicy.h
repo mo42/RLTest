@@ -3,11 +3,11 @@
 
 #include <limits>
 
-#include "GreedyPolicy.h"
-#include "IGridWorld.h"
-#include "RLRandom.h"
-#include "RandomPolicy.h"
-#include "StateAction.h"
+#include <GreedyPolicy.h>
+#include <IGridWorld.h>
+#include <RLRandom.h>
+#include <RandomPolicy.h>
+#include <StateAction.h>
 
 namespace RL {
 

@@ -1,7 +1,7 @@
 #include <iostream>
 
-#include "MazeWorld.h"
-#include "Sarsa.h"
+#include <MazeWorld.h>
+#include <Sarsa.h>
 
 using namespace RL;
 
