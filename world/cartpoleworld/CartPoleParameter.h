@@ -1,8 +1,8 @@
-#ifndef CARTPOLESTATE_H_
-#define CARTPOLESTATE_H_
+#ifndef CARTPOLEPARAMETER_H_
+#define CARTPOLEPARAMETER_H_
 
 #include <Eigen/Dense>
 
 typedef Eigen::Matrix<double, 4, 1> CartPoleParameter;
 
-#endif /* CARTPOLESTATE_H_ */
+#endif /* CARTPOLEPARAMETER_H_ */
