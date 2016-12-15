@@ -8,10 +8,12 @@ include_directories(util)
 include_directories(world)
 include_directories(world/cartpoleworld)
 include_directories(world/mazeworld)
+include_directories(world/mountaincarworld)
 
 add_subdirectory(util)
 add_subdirectory(world/cartpoleworld)
 add_subdirectory(world/mazeworld)
+add_subdirectory(world/mountaincarworld)
 
 add_executable(SarsaTest
   SarsaTest.cpp
@@ -29,4 +31,12 @@ add_executable(PowerTest
 target_link_libraries(PowerTest
   util
   cartpoleworld
+)
+
+add_executable(Test
+  Test.cpp
+)
+
+target_link_libraries(Test
+  mountaincarworld
 )
