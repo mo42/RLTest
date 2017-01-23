@@ -14,7 +14,7 @@ public:
    * Number of updates per episode.
    */
   std::size_t updatesEpisode;
-
+  std::size_t walks;
   std::size_t episodeLength;
 
   double alpha;
@@ -26,6 +26,8 @@ public:
   double gamma;
 
   double sigma;
+
+  double epsilon;
 };
 
 } /* namespace RL */

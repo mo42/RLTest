@@ -31,6 +31,7 @@ add_executable(PowerTest
 target_link_libraries(PowerTest
   util
   cartpoleworld
+  mountaincarworld
 )
 
 add_executable(Test
