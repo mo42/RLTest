@@ -4,6 +4,11 @@
 namespace RL {
 
 /**
+ * Draw a real pseudo-random number from the normal distribution.
+ */
+double normalRandom(void);
+
+/**
  * Return a real pseudo-random number in the interval [0.0, 1.0].
  */
 double uniformRandom(void);

@@ -29,9 +29,9 @@ double CartPoleWorld::act(const CartPoleParameter& state,
       (length * (fourThirds - poleMass * cosTheta * cosTheta / totalMass));
   double xAcc = temp - poleMassLength * thetaAcc * cosTheta / totalMass;
 
-  nextState(0) = x + timeStep * xDot + 0.01 * uniformRandom();
+  nextState(0) = x + timeStep * xDot + 0.01 * normalRandom();
   nextState(1) = xDot + timeStep * xAcc;
-  nextState(2) = theta + timeStep * thetaDot + 0.01 * uniformRandom();
+  nextState(2) = theta + timeStep * thetaDot + 0.01 * normalRandom();
   nextState(3) = thetaDot + timeStep * thetaAcc;
   if (std::abs(nextState(0)) > 2.4 || std::abs(nextState(2)) > twelveDegrees)
     return -1.0;

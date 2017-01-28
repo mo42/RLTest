@@ -7,6 +7,9 @@ namespace RL {
 std::random_device rd;
 std::mt19937 engine(rd());
 std::uniform_real_distribution<double> urd(0.0, 1.0);
+std::normal_distribution<double> normal(0.0, 1.0);
+
+double normalRandom() { return normal(engine); }
 
 double uniformRandom() { return urd(engine); }
 

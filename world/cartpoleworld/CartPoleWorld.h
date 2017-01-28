@@ -5,6 +5,7 @@
 
 #include <CartPoleAction.h>
 #include <CartPoleParameter.h>
+#include <CartPoleWeight.h>
 #include <IWorld.h>
 
 namespace RL {

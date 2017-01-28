@@ -8,7 +8,7 @@ namespace RL {
 template <typename TParameter>
 void noiseVector(TParameter& epsilon, double standardDeviation) {
   for (std::size_t i = 0; i < epsilon.rows(); ++i) {
-    epsilon(i) = standardDeviation * uniformRandom();
+    epsilon(i) = standardDeviation * normalRandom();
   }
 }
 
