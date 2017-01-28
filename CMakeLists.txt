@@ -34,10 +34,3 @@ target_link_libraries(PowerTest
   mountaincarworld
 )
 
-add_executable(Test
-  Test.cpp
-)
-
-target_link_libraries(Test
-  mountaincarworld
-)
