@@ -22,7 +22,8 @@ template <typename TParameter, typename TAction, typename TWeight>
 double episode(const IWorld<TParameter, TAction>& world,
                const TParameter& theta, TWeight& weightRewards,
                TParameter& epsilonRewards, Parameter& p) {
-  TParameter state = TParameter::Zero();
+  TParameter state;
+  world.initialState(state);
   std::vector<double> rewards;
   std::vector<TParameter> epsilons;
   std::vector<TParameter> states;
@@ -73,7 +74,7 @@ double episode(const IWorld<TParameter, TAction>& world,
  */
 template <typename TParameter, typename TWeight, typename TAction>
 double episodes(const IWorld<TParameter, TAction>& world,
-                const TParameter& theta, TParameter& update, Parameter p) {
+                const TParameter& theta, TParameter& update, Parameter& p) {
   TWeight sumWeightRewards = TWeight::Zero();
   TParameter sumEpsilonRewards = TParameter::Zero();
   double rewards = 0.0;
