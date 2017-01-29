@@ -16,7 +16,7 @@ TAction continuousNoisePolicy(const TParameter& theta, const TParameter& state,
 template <typename TParameter, typename TAction>
 TAction continuousNoisePolicy(const TParameter& theta, const TParameter& state,
                               double sigma = 0.5) {
-  return (temp.transpose() * state) + sigma * normalRandom();
+  return (theta.transpose() * state) + sigma * normalRandom();
 }
 
 } /* namespace RL */
