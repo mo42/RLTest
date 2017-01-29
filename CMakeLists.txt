@@ -31,6 +31,13 @@ add_executable(PowerTest
 target_link_libraries(PowerTest
   util
   cartpoleworld
-  mountaincarworld
 )
 
+add_executable(GradientTest
+  GradientTest.cpp
+)
+
+target_link_libraries(GradientTest
+  util
+  cartpoleworld
+)

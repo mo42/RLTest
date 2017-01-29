@@ -97,8 +97,9 @@ void power(const IWorld<TParameter, TAction>& world, TParameter& theta,
            Parameter& p) {
   for (size_t i = 0; i < p.updates; ++i) {
     TParameter update;
-    episodes<TParameter, TWeight, TAction>(world, theta, update, p);
+    double r = episodes<TParameter, TWeight, TAction>(world, theta, update, p);
     theta += update;
+    std::cout << i << " " << r << std::endl;
   }
 }
 
