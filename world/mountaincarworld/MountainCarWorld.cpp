@@ -2,9 +2,9 @@
 
 namespace RL {
 
-double MountainCarWorld::act(const MountainCarState& state,
+double MountainCarWorld::act(const MountainCarParameter& state,
                              const MountainCarAction& action,
-                             MountainCarState& nextState) const {
+                             MountainCarParameter& nextState) const {
   nextState(1) = state(1) + 0.001 * (static_cast<double>(action) - 1.0) -
                  0.0025 * cos(3.0 * state(0));
   if (nextState(1) > maxVelocity)
@@ -25,11 +25,11 @@ double MountainCarWorld::act(const MountainCarState& state,
   }
 }
 
-bool MountainCarWorld::isTerminal(const MountainCarState& state) const {
+bool MountainCarWorld::isTerminal(const MountainCarParameter& state) const {
   return state(0) >= goal;
 }
 
-void MountainCarWorld::initialState(MountainCarState& state) const {
+void MountainCarWorld::initialState(MountainCarParameter& state) const {
   state(0) = initialPosition;
   state(1) = initialVelocity;
 }

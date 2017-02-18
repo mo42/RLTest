@@ -2,7 +2,6 @@
 #define CARTPOLEWORLD_H_
 
 #include <Eigen/Dense>
-
 #include <CartPoleAction.h>
 #include <CartPoleParameter.h>
 #include <CartPoleWeight.h>
@@ -23,7 +22,6 @@ private:
 
   const double fourThirds = 1.3333333333333;
   const double twelveDegrees = 0.2094384;
-  double sign(double a);
 
 public:
   virtual double act(const CartPoleParameter& state,
