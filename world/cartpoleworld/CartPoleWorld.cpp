@@ -5,13 +5,6 @@
 
 namespace RL {
 
-double CartPoleWorld::sign(double a) {
-  if (a > 0)
-    return 1.0;
-  else
-    return -1.0;
-}
-
 double CartPoleWorld::act(const CartPoleParameter& state,
                           const CartPoleAction& action,
                           CartPoleParameter& nextState) const {

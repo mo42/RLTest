@@ -8,7 +8,7 @@
 
 namespace RL {
 
-class MountainCarWorld : public IWorld<MountainCarState, MountainCarAction> {
+class MountainCarWorld : public IWorld<MountainCarParameter, MountainCarAction> {
 private:
   const MountainCarNumber gravity = 9.8;
   const MountainCarNumber cartMass = 1.0;
@@ -31,11 +31,11 @@ private:
   const MountainCarNumber initialPosition = -0.52;
   const MountainCarNumber initialVelocity = 0.0;
 public:
-  virtual double act(const MountainCarState& state,
+  virtual double act(const MountainCarParameter& state,
                      const MountainCarAction& action,
-                     MountainCarState& nextState) const;
-  virtual bool isTerminal(const MountainCarState& state) const;
-  virtual void initialState(MountainCarState& state) const;
+                     MountainCarParameter& nextState) const;
+  virtual bool isTerminal(const MountainCarParameter& state) const;
+  virtual void initialState(MountainCarParameter& state) const;
 };
 
 } /* namespace RL */
