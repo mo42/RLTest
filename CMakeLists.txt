@@ -27,6 +27,15 @@ target_link_libraries(SarsaTest
   cliffworld
 )
 
+add_executable(QLearningTest
+  QLearningTest.cpp
+)
+
+target_link_libraries(QLearningTest
+  util
+  cliffworld
+)
+
 add_executable(PowerTest
   PowerTest.cpp
 )
