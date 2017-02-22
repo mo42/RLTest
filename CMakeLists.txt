@@ -9,11 +9,13 @@ include_directories(world)
 include_directories(world/cartpoleworld)
 include_directories(world/mazeworld)
 include_directories(world/mountaincarworld)
+include_directories(world/cliffworld)
 
 add_subdirectory(util)
 add_subdirectory(world/cartpoleworld)
 add_subdirectory(world/mazeworld)
 add_subdirectory(world/mountaincarworld)
+add_subdirectory(world/cliffworld)
 
 add_executable(SarsaTest
   SarsaTest.cpp
@@ -22,6 +24,16 @@ add_executable(SarsaTest
 target_link_libraries(SarsaTest
   util
   mazeworld
+  cliffworld
+)
+
+add_executable(QLearningTest
+  QLearningTest.cpp
+)
+
+target_link_libraries(QLearningTest
+  util
+  cliffworld
 )
 
 add_executable(PowerTest

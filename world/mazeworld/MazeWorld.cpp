@@ -9,7 +9,7 @@ std::size_t MazeWorld::getNumberStates(void) const { return numberStates; }
 
 std::size_t MazeWorld::getNumberActions(void) const { return numberActions; }
 
-const std::size_t MazeWorld::numberActions = RL::numberActions;
+const std::size_t MazeWorld::numberActions = RL::numberMazeActions;
 
 double MazeWorld::act(const MazeState& state, const MazeAction& action,
                       MazeState& nextState) const {

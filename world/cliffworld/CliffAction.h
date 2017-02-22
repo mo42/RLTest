@@ -1,5 +1,5 @@
-#ifndef MAZEACTION_H_
-#define MAZEACTION_H_
+#ifndef CLIFFACTION_H_
+#define CLIFFACTION_H_
 
 #include <cstddef>
 
@@ -12,10 +12,10 @@ namespace RL {
  * 2 is left
  * 3 is down
  */
-typedef std::size_t MazeAction;
-const std::size_t numberMazeActions = 4;
+typedef std::size_t CliffAction;
+const std::size_t numberCliffActions = 4;
 
 } /* namespace RL */
 
-#endif /* MAZEACTION_H_ */
+#endif /* CLIFFACTION_H_ */
 
