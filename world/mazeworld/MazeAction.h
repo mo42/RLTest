@@ -13,7 +13,7 @@ namespace RL {
  * 3 is down
  */
 typedef std::size_t MazeAction;
-const std::size_t numberActions = 4;
+const std::size_t numberMazeActions = 4;
 
 } /* namespace RL */
 
