@@ -13,7 +13,7 @@ template <typename TGridState, typename TGridAction>
 TGridAction greedyPolicy(const IGridWorld<TGridState, TGridAction>& world,
                          const StateAction& stateAction,
                          const TGridState& state) {
-  double max = std::numeric_limits<double>::min();
+  double max = std::numeric_limits<double>::lowest();
   TGridAction maxAction = 0;
   for (std::size_t i = 0; i < world.getNumberActions(); ++i) {
     if (max < stateAction[state.id][i]) {
