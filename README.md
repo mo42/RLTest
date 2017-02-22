@@ -10,3 +10,4 @@ Test Reinforcement Learning Algorithms
 - Cart pole world
 - Mountain car world
 - Simple maze world (discrete)
+- Cliff world (discrete)

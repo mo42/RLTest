@@ -16,6 +16,7 @@ public:
   std::size_t updatesEpisode;
   std::size_t walks;
   std::size_t episodeLength;
+  std::size_t episodes;
 
   double alpha;
   double beta;
