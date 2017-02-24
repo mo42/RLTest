@@ -67,6 +67,23 @@ void policyGradient(IWorld<TParameter, TAction>& world, TParameter& theta,
   }
 }
 
+template <typename TParameter>
+void resilientBackPropagation(TParameter& theta, TParameter& alpha,
+                              TParameter& gradient,
+                              TParameter& previousGradient) {
+  for (std::size_t i = 0; i < theta.rows(); ++i) {
+    if(gradient(i) * previousGradient(i) > 0.0) {
+      alpha(i) *= 1.2;
+      theta(i) -= alpha(i) * sign(gradient(i));
+    } else if(gradient(i) * previousGradient(i) < 0.0) {
+      alpha(i) *= 0.5;
+      theta(i) += alpha(i) * sign(gradient(i));
+    } else {
+      theta(i) += alpha(i) * sign(gradient(i));
+    }
+  }
+}
+
 } /* namespace RL */
 
 #endif /* POLICYGRADIENT_H_ */
