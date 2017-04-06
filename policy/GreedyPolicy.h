@@ -9,6 +9,15 @@
 
 namespace RL {
 
+/**
+ * Return greedy action.
+ *
+ * world:
+ * stateAction: the stateAction function
+ * state: current state
+ *
+ * return: action
+ */
 template <typename TGridState, typename TGridAction>
 TGridAction greedyPolicy(const IGridWorld<TGridState, TGridAction>& world,
                          const StateAction& stateAction,

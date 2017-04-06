@@ -11,6 +11,16 @@
 
 namespace RL {
 
+/**
+ * Return epsilon greedy action.
+ *
+ * world:
+ * stateAction: the stateAction function
+ * state: current state
+ * epsilon: probability of selecting the greedy policy
+ *
+ * return: action
+ */
 template <typename TGridState, typename TGridAction>
 TGridAction epsilonPolicy(const IGridWorld<TGridState, TGridAction>& world,
                           const StateAction& stateAction,
