@@ -10,7 +10,8 @@ namespace RL {
  *
  * theta: learned parameter
  * state: current state
- * epsilon: noise vector
+ * epsilon: noise vector (parameter space)
+ * sigma: random noise (action space)
  *
  * return: action
  */
