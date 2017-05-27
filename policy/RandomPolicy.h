@@ -5,6 +5,13 @@
 
 namespace RL {
 
+/**
+ * Return random action.
+ *
+ * world:
+ *
+ * return: action
+ */
 template <typename TGridState, typename TGridAction>
 TGridAction randomPolicy(const IGridWorld<TGridState, TGridAction>& world) {
   return static_cast<TGridAction>(

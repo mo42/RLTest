@@ -5,6 +5,16 @@
 
 namespace RL {
 
+/**
+ * Return action given parameter vector and state.
+ *
+ * theta: learned parameter
+ * state: current state
+ * epsilon: noise vector (parameter space)
+ * sigma: random noise (action space)
+ *
+ * return: action
+ */
 template <typename TParameter, typename TAction>
 TAction continuousNoisePolicy(const TParameter& theta, const TParameter& state,
                               TParameter& epsilon, double sigma = 0.5) {
@@ -13,6 +23,15 @@ TAction continuousNoisePolicy(const TParameter& theta, const TParameter& state,
   return temp.transpose() * state;
 }
 
+/**
+ * Return action given parameter vector and state.
+ *
+ * theta: learned parameter
+ * state: current state
+ * sigma: random noise
+ *
+ * return: action
+ */
 template <typename TParameter, typename TAction>
 TAction continuousNoisePolicy(const TParameter& theta, const TParameter& state,
                               double sigma = 0.5) {
