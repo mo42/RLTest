@@ -3,12 +3,14 @@
 
 #include <vector>
 
+#include <Types.h>
+
 namespace RL {
 
 /**
  * Two dimensional array used as the state action function
  */
-typedef std::vector<std::vector<double>> StateAction;
+typedef std::vector<std::vector<TRLValue>> StateAction;
 
 } /* namespace RL */
 
