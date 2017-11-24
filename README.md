@@ -6,6 +6,7 @@ Test Reinforcement Learning Algorithms
 - Simple Policy Gradient
 - SARSA (discrete)
 - Q-learning (discrete)
+- TDLearning (discrete)
 
 ## Worlds
 - Cart pole world
