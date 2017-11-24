@@ -3,7 +3,6 @@
 
 #include <Eigen/Dense>
 
-#include <CartPoleWorld.h>
 #include <ContinuousNoisePolicy.h>
 #include <Parameter.h>
 #include <RLRandom.h>
