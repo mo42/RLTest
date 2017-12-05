@@ -41,9 +41,11 @@ void policyGradientUpdate(const IWorld<TParameter, TAction>& world,
   Eigen::MatrixXd dtheta(p.updatesEpisode, theta.rows());
   Eigen::MatrixXd dj(p.updatesEpisode, 1);
   TParameter noise;
+  if(noise.rows() == 0)
+    noise.resize(theta.rows());
   double j = episode(world, theta, p);
   for (size_t i = 0; i < p.updatesEpisode; ++i) {
-    noiseVector(noise, 0.2);
+    noiseVector(noise, p.sigma);
     TParameter thetaNoise = theta + noise;
     double deltaj = episode(world, thetaNoise, p) - j;
     dtheta.row(i) = noise;
