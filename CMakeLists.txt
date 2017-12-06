@@ -2,6 +2,7 @@ cmake_minimum_required (VERSION 3.6)
 project ("RLTest")
 
 set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -Wall")
+set(CMAKE_CXX_FLAGS "-O0")
 
 include_directories(algorithm)
 include_directories(SYSTEM eigen)
@@ -17,9 +18,9 @@ include_directories(world/adapterworld)
 add_subdirectory(util)
 add_subdirectory(world/cartpoleworld)
 add_subdirectory(world/mazeworld)
+
 add_subdirectory(world/mountaincarworld)
 add_subdirectory(world/cliffworld)
-add_subdirectory(world/adapterworld)
 
 add_executable(TDLearningTest
   TDLearningTest.cpp
@@ -75,6 +76,7 @@ add_executable(AdapterTest
 )
 
 target_link_libraries(AdapterTest
+  util
   mazeworld
-  adapterworld
+  cliffworld
 )
