@@ -13,3 +13,6 @@ Test Reinforcement Learning Algorithms
 - Mountain car world
 - Simple maze world (discrete)
 - Cliff world (discrete)
+- Adapter world (a continuous world that can be instantiated with a discrete
+  world. With One-hot coding, algorithms for continuous worlds can work on
+  discrete worlds.)
