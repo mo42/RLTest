@@ -14,13 +14,14 @@ include_directories(world/mazeworld)
 include_directories(world/mountaincarworld)
 include_directories(world/cliffworld)
 include_directories(world/adapterworld)
+include_directories(world/carworld)
 
 add_subdirectory(util)
 add_subdirectory(world/cartpoleworld)
 add_subdirectory(world/mazeworld)
-
 add_subdirectory(world/mountaincarworld)
 add_subdirectory(world/cliffworld)
+add_subdirectory(world/carworld)
 
 add_executable(TDLearningTest
   TDLearningTest.cpp
@@ -79,4 +80,13 @@ target_link_libraries(AdapterTest
   util
   mazeworld
   cliffworld
+)
+
+add_executable(CarWorldTest
+  CarWorldTest.cpp
+)
+
+target_link_libraries(CarWorldTest
+  util
+  carworld
 )
