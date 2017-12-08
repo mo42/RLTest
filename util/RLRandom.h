@@ -26,7 +26,7 @@ int uniformRandomInteger(int min, int max);
  */
 template <typename TParameter>
 void noiseVector(TParameter& epsilon, double standardDeviation) {
-  for (std::size_t i = 0; i < epsilon.rows(); ++i) {
+  for (int i = 0; i < epsilon.rows(); ++i) {
     epsilon(i) = standardDeviation * normalRandom();
   }
 }
