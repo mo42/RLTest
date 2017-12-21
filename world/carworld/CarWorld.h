@@ -11,6 +11,13 @@ namespace RL {
 
 class CarWorld : public IWorld<CarParameter, CarAction> {
 private:
+  const CarNumber timeStep = 0.01;
+  const CarNumber mass = 1.0;
+  const CarNumber inertia = 1.0;
+  const CarNumber tractionFactor = 1.0;
+  const CarNumber resistanceFactor = 10.0;
+  const CarNumber dragFactor = 2.0;
+  const CarNumber rotationalFactor = 1.0;
 public:
   virtual double act(const CarParameter& state, const CarAction& action,
                      CarParameter& nextState) const;

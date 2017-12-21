@@ -3,6 +3,7 @@
 
 #include <Eigen/Dense>
 
+typedef double CarNumber;
 /**
  * The state of the car consists of:
  * 1. x position
@@ -12,6 +13,6 @@
  * 5. angle of car in coordinate system
  * 6. angular velocity
  */
-typedef Eigen::Matrix<double, 6, 1> CarParameter;
+typedef Eigen::Matrix<CarNumber, 6, 1> CarParameter;
 
 #endif /* CARPARAMETER_H_ */
